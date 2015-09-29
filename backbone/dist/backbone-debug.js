@@ -18,7 +18,7 @@ define("gallery/backbone/1.1.2/backbone-debug", [ "gallery/underscore/1.6.0/unde
             });
         } else if (typeof exports !== "undefined") {
             var _ = require("gallery/underscore/1.6.0/underscore-debug");
-            factory(root, exports, _);
+            factory(root, exports, _, jQuery);
         } else {
             root.Backbone = factory(root, {}, root._, root.jQuery || root.Zepto || root.ender || root.$);
         }
